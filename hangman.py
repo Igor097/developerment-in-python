@@ -3,7 +3,7 @@ def play_hangman():
     print('Hangman game')
 
     word_secret = 'Banana'.upper()
-    successful_letters = ['_', '_', '_', '_', '_', '_']
+    successful_letters = ['_' for letter in word_secret]
 
     hanged = False # Checks the player hanged
     right = False  # Check players' correctness
