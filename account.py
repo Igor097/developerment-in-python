@@ -2,7 +2,8 @@
 class Account:
 
     def __init__(self, number, holder, balance, limit):
-        print('Create object...'.format(self))
+        #print('Create object...{}'.format(self))
+        print('Create object...')
         self.__number = number
         self.__holder = holder
         self.__balance = balance
@@ -24,9 +25,17 @@ class Account:
         self.deposit()
         destiny.drawings(value)
 
+    def set_balance(self, balance):
+        self.__balance = balance
 
+    def get_balance(self):
+        return self.__balance
 
+    def set_limit(self, limit):
+        self.__limit = limit
 
+    def get_limit(self):
+        return self.__limit
 
 
 
